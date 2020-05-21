@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Message extends Model
+class MessageModel extends Model
 {
-    protected $Table = 'message';
+    protected $Table = 'message_models';
     //relacion de muchos a uno 
 
     public function user(){

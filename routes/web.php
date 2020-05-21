@@ -18,11 +18,11 @@ Route::get('/', function () {
 
 // rutas oficiales
 //rutas para crear usuario (clave)
-Route::post('api/register','UserController@Register');
-Route::post('api/login','UserController@login');
-Route::put('api/user/update','UserController@update');
+Route::post('usuario/register','UserController@Register');
+Route::post('usuario/credencial','UserController@login');
+Route::put('usuario/update','UserController@update');
 //rutas para tags
-Route::resource('/api/Tag', 'TagController');
+Route::resource('/Tag', 'TagController');
 //rutas para message
-Route::resource('/api/Message', 'MessageController');
+Route::resource('/Message', 'MessageController');
 

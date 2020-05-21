@@ -9,6 +9,6 @@ class Tag extends Model
     protected $table='Tag';
     ///relacion de uno a muchos
     public function Tag(){
-        return $this->hasMany('App\Message');
+        return $this->hasMany('App\MessageModel');
     }
 }

@@ -51,7 +51,8 @@
                           <label >Password</label>
                           <input type="password" class="form-control" id="password">
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                       
+                        <button onclick="myFunction()" class="btn btn-primary">submit</button>
                       </form>
                   </div>
  
@@ -61,7 +62,33 @@
               </div>
 
            
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+              <script> 
+                
+                function myFunction(){
+                  var name=document.getElementById("name").value;
+                  var password=document.getElementById("password").value;
+
+                  var myjson = '{"name":"","password":"1234","codigo":403}'
+                  var ajax_request = new XMLHttpRequest();
+                  ajax_request.open( "POST", ajax_url, true );
+                  // Establecer la cabecera Content-Type apropiada
+                  ajax_request.setRequestHeader("Content-Type", "usuario/credencial; charset=UTF-8");
+                  // Enviar la solicitud
+                  ajax_request.send( myjson);
+
+
+                  
+
+                 
+
+                  
+                }
+              
+              </script> 
+
         
+            
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
