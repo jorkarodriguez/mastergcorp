@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "mastergcorp-angular"
+    }
+  },
+  "defaultProject": "mastergcorp-angular",
+  "cli": {
+    "analytics": "1c322c34-0825-4e75-bced-19d977a76c4d"
+  }
 }
