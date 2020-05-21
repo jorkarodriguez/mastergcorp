@@ -43,7 +43,7 @@ se solicita que se realice una aplicación que haga lo siguiente:
 1. las pruebas del APi res se han guardado en el programa postman https://www.postman.com/  visitar el  link de abajo para obtener el archivo a importar en el sistema postman.
         https://www.getpostman.com/collections/5e9e9d428d1edb1d789d
         
-2. abrir postman y precionarl el boton import en la esquina superior izquierda. 
+2. abrir postman y hacer click en el boton import en la esquina superior izquierda. 
 3. en la ventana emergente seleccionar raw text.
 4. importar el proyecto y revisar las pruebas realizadas a el APi Rest
 ## formularios de usuario (fontend).
