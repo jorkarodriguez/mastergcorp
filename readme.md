@@ -35,3 +35,16 @@ se solicita que se realice una aplicación que haga lo siguiente:
 - Que se puedan ver los mensajes de cada usuario.
 - Que se puedan filtrar por medio de un Tag.
 - Cada mensaje tiene que estar autenticado y encriptado al igual que las claves de el usuario.
+
+## instrucciones 
+1. copiar el script SQL que está en la carpeta Base de datos
+2. generar la base de datos e ingresar datos de prueba.
+## prueba del api res (backend)
+1. las pruebas del apires se han guardado en un postman visitar el siguiente link para mas informacion
+        https://www.getpostman.com/collections/5e9e9d428d1edb1d789d
+## formularios de usuario (fontend)
+
+los formularios de usuario se pueden visualisar siguendo los siguientes pasos 
+1. copiar el respositorio a un servidor locar como por ejemplo c:\laragon\www\
+2. hacer uso del codigo ng serve  en el directorio \mastergcorp-angular de node.js para ejecutar ej proyecto de angular.js 
+
