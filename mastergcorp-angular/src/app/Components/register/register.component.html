@@ -1,0 +1,61 @@
+<style>
+  :host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .full-height {
+    height: 100vh;
+  }
+
+  .flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .position-ref {
+    position: relative;
+  }
+</style>
+
+<title>mastergcorp</title>
+
+<div class="container flex-center position-ref full-height">
+  <div class="row ">
+    <div class="col-md-12 col-ms-12 col-sm-12">
+      <h1>{{page_title}}</h1>
+      <h1 class=" title"> Aaron Jorkaef Jacobo test </h1>
+    </div>
+
+    <div class=" col-md-6 col-sm-12 col-xs-12">
+
+      <form #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)">
+        <div class="form-group">
+          <label> Name</label>
+          <input type="text" class="form-control" name="name" #name="ngModel" [(ngModel)]="user.nombre" required
+            pattern="[a-zA-z]+">
+          <small *ngIf="!name.valid && name.touched" class=" invalid-feedback">
+            el usuario no es valido
+          </small>
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" class="form-control" id="password" name="password" #password="ngModel"
+            [(ngModel)]="user.password" required pattern="[a-zA-z]+">
+        </div>
+        <small *ngIf="!password.valid && password.touched" class=" invalid-feedback">
+          el usuario no es valido
+        </small>
+
+        <button class="btn btn-primary" [disabled]="registerForm.invalid">Guardar usuario</button>
+      </form>
+    </div>
+  </div>
+
+
+</div>
